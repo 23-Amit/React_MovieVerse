@@ -8,7 +8,7 @@ function App() {
   {
     const data = await fetch(`${Api_Url}&s=${title}`)
     const movieData = await data.json()
-    console.log(movieData.Search)
+    //console.log(movieData.Search)
     if(movieData.Search)
     {
       setMovies(movieData.Search)
@@ -18,7 +18,7 @@ function App() {
   useEffect(()=>
   {
     searchMovies(movieName)
-  },[movieName])
+  },[movieName])//
 
   const list = movies.map((ele,index)=>{
     return (
