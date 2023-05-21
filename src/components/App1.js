@@ -3,7 +3,7 @@ import React, {useEffect,useState} from 'react'
 function App() {
   const [movies,setMovies] = useState([])
   const [movieName,setMovieName] = useState('hulk')
-  const Api_Url = 'http://www.omdbapi.com?apikey=ecb97987'
+  const Api_Url = 'https://www.omdbapi.com?apikey=ecb97987'
   const searchMovies = async (title)=>
   {
     const data = await fetch(`${Api_Url}&s=${title}`)
